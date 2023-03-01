@@ -3,6 +3,7 @@
     ---bg--navbar: #FFFFFF;
     ---bg--content-top: #1B72E8;
     ---bg--content-bottom: #F8F9FA;
+    ---bg--sidebar: #051E34;
 }
 /* #endregion ------colors */
 
@@ -13,39 +14,26 @@
 }
 
 /* #endregion ------utilities */
-
-
-
 .dashed{
-    border: 2px dashed black;    
+    border: 2px dashed pink;    
 }
-#top{
+#top nav{
     background-color: var(---bg--navbar) ;
-    height: 5rem;
-    position: sticky;
-    top: 0;
+    height: 68px;
+}
+#wrapper{
+    height: calc(100vh - 68px);
 }
 #sidebar{
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
-    background-color: rgba(0, 0, 255, 0.358);
-    width: 5rem;
+    background-color: var(---bg--sidebar);
+    width: 68px;
     height: calc(100vh - 5rem);
-    position: sticky;
-    left: 0;
-    top: 5rem;
-
-
-
-
 }
 #main{
-    width: calc(100% - 3rem);
-    overflow-y: auto;
-
-
-
-    
+    width: calc(100% - 68px);
+    overflow-y: auto;        
 }
 .header{
     height: 8rem;
@@ -56,10 +44,34 @@
 }
 
 
+.cacao_mob_logo{
+    width: 2.5rem;
+}
+.cacao_logo{
+    width: 10rem;
+    display: none;
+}
 
 
 
+/* #region ---------MQ */
+@media screen and (min-width: 992px) {
+    #sidebar{
+        width: 150px;
+        height: calc(100vh - 5rem);
+    }
+    #main{
+        width: calc(100% - 150px);       
+    }
+    .cacao_mob_logo{
+        display: none;
+    }
+    .cacao_logo{
+        display:inline-block;
+    }
+}
 
+/* #endregion ------MQ */
 
 
 
