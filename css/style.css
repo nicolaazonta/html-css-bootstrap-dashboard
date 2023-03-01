@@ -1,0 +1,70 @@
+/* #region ---------colors */
+:root{
+    ---bg--navbar: #FFFFFF;
+    ---bg--content-top: #1B72E8;
+    ---bg--content-bottom: #F8F9FA;
+}
+/* #endregion ------colors */
+
+
+/* #region ---------utilities */
+.dashed{
+    border: 2px dashed violet;    
+}
+
+/* #endregion ------utilities */
+
+
+
+.dashed{
+    border: 2px dashed black;    
+}
+#top{
+    background-color: var(---bg--navbar) ;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+}
+#sidebar{
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 255, 0.358);
+    width: 5rem;
+    height: calc(100vh - 5rem);
+    position: sticky;
+    left: 0;
+    top: 5rem;
+
+
+
+
+}
+#main{
+    width: calc(100% - 3rem);
+    overflow-y: auto;
+
+
+
+    
+}
+.header{
+    height: 8rem;
+    background-color: var(---bg--content-top);
+}
+.content{
+    background-color: var(---bg--content-bottom);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
