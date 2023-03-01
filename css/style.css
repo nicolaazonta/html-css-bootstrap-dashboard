@@ -12,7 +12,9 @@
 .dashed{
     border: 2px dashed violet;    
 }
-
+*{
+    list-style: none;
+}
 /* #endregion ------utilities */
 .dashed{
     border: 2px dashed pink;    
@@ -51,7 +53,19 @@
     width: 10rem;
     display: none;
 }
-
+.cacao_nav_bg{
+    background-color: lightgray;
+}
+.cacao_bell{
+    color: orange;
+    padding-left: 0;
+}
+.cacao_collapsed_menu{
+    display: initial;
+}
+.cacao_extended_menu{
+    display: none;
+}
 
 
 /* #region ---------MQ */
@@ -68,6 +82,12 @@
     }
     .cacao_logo{
         display:inline-block;
+    }
+    .cacao_collapsed_menu{
+        display: none;
+    }
+    .cacao_extended_menu{
+        display: initial;
     }
 }
 
