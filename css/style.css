@@ -16,9 +16,7 @@
     list-style: none;
 }
 /* #endregion ------utilities */
-.dashed{
-    border: 2px dashed pink;    
-}
+
 #top nav{
     background-color: var(---bg--navbar) ;
     height: 68px;
@@ -43,6 +41,9 @@
 }
 .content{
     background-color: var(---bg--content-bottom);
+}
+#sidebar .fa-chart-simple{
+    margin:0 .1rem;    
 }
 
 
