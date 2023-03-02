@@ -29,10 +29,9 @@
     background-size: cover;
     background-color: var(---bg--sidebar);
     width: 68px;
-    height: calc(100vh - 5rem);
+    height: 100%;
 }
 #main{
-    width: calc(100% - 68px);
     overflow-y: auto;        
 }
 .header{
