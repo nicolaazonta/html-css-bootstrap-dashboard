@@ -96,31 +96,145 @@
           </div>
         </div>       
         
-        <div id="main" class="dashed"><!-- /#main -->
-            <div class="header d-flex flex-column flex-md-row"><!-- /.header -->
-              <div class="section dashed order-md-3 flex-grow-1 p-2 d-flex align-items-center flex-wrap"><!-- /.section -->
+        <div id="main" class=""><!-- /#main -->
+
+            <div class="header d-flex flex-column flex-md-row text-white"><!-- /.header -->
+              <div class="section  order-md-3 flex-grow-1 p-2 d-flex align-items-center flex-wrap"><!-- /.section -->
                 <h4>nuovo studente</h4>
                 <i class="fa-solid fa-square-plus fa-3x px-2"></i>
 
               </div>
-              <div class="section dashed order-md-1 flex-grow-1 p-2 d-flex justify-items-center flex-wrap flex-column"><!-- /.section -->
+              <div class="section  order-md-1 flex-grow-1 p-2 d-flex justify-items-center flex-wrap flex-column"><!-- /.section -->
                 <h1>boolean</h1>
                 <p>3app</p>
               </div>
-              <div class="section dashed order-md-2 flex-grow-1 p-2 d-flex justify-items-center flex-wrap flex-column"><!-- /.section -->
+              <div class="section  order-md-2 flex-grow-1 p-2 d-flex justify-items-center flex-wrap flex-column"><!-- /.section -->
                 <h4>studenti online</h4>
                 <h2>125</h2>
-              </div>
-              
-                 
-              
+              </div>   
             </div>
             
             <div class="content"><!-- /.content -->
-              <p>
-              </p>
+              <div class="container"><!-- /.container -->
+                <div class="row"><!-- /.row -->
+                  <div class="col-12 col-lg-8 g-2"><!-- /.col-12 col-lg-8 -->
+                    <div class="card"><!-- /.card -->
+                      <div class="card-header">
+                        <h3>Prossime classi</h3>
+                      </div>
+                      <div class="card-body"><!-- table -->
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Handle</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td colspan="2">Larry the Bird</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>                    
+                  </div> 
+                  <div class="col-12 col-lg-4 g-2"><!-- /.col-12 col-lg-8 -->
+                    <div class="card"><!-- /.card -->
+                      <div class="card-header">
+                        <h3>To do</h3>
+                      </div>
+                      <div class="card-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                          <label class="form-check-label" for="defaultCheck2">
+                            Disabled checkbox
+                          </label>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="col-12 col-lg-8 g-2"><!-- /.col-12 col-lg-8 -->
+                    <div class="card"><!-- /.card -->
+                      <div class="card-header">
+                        <h3 class="text-uppercase">f.a.q.</h3>
+                      </div>
+                      <div class="card-body"><!-- table -->
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div> 
+                  <div class="col-12 col-lg-4 g-2"><!-- /.col-12 col-lg-8 -->
+                    <div class="card"><!-- /.card -->
+                      <div class="card-body">
+                        <img class="img-fluid" src="./img/stats.jpeg" alt="">
+                      </div>
+                    </div>                    
+                  </div>                 
+                </div>
+                                
+              </div>              
             </div>
-            
+
         </div>        
     </div>
     
