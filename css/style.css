@@ -68,7 +68,9 @@
 .cacao_extended_menu{
     display: none;
 }
-
+#main .cacao_canvas{
+    width: 100%;
+}
 
 /* #region ---------MQ */
 @media screen and (min-width: 768px) {
@@ -96,6 +98,9 @@
     }
     .cacao_extended_menu{
         display: initial;
+    }
+    #main .cacao_canvas{
+        width: 50%;
     }
 }
 

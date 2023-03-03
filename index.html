@@ -14,7 +14,7 @@
 <body>
 
     <div id="top" class=""><!-- /#top -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg shadow pb-2 bg-body rounded">
             <div class="container-fluid"> 
               <a class="navbar-brand" href="#">
                 <img class="img-fluid cacao_mob_logo" src="./img/mobile-logo.png" alt="small logo">
@@ -30,7 +30,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-dark">
                   <li class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="fas fa-list    "></i>
+                      <i class="fas fa-list"></i>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -99,16 +99,75 @@
         <div id="main" class=""><!-- /#main -->
 
             <div class="header d-flex flex-column flex-md-row text-white"><!-- /.header -->
-              <div class="section  order-md-3 flex-grow-1 p-2 d-flex align-items-center flex-wrap"><!-- /.section -->
-                <h4>nuovo studente</h4>
-                <i class="fa-solid fa-square-plus fa-3x px-2"></i>
 
+              <div class="section  order-md-3 flex-grow-1 pt-2 px-2 py-md-3 d-flex align-items-center align-items-md-start flex-wrap"><!-- /.section -->
+                <h4 class="pt-md-2">nuovo studente</h4>
+                
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                  <i class="fa-solid fa-square-plus fa-3x px-2"></i>
+                </button>
+
+                
+
+                <div class="cacao_canvas offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                    
+                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                      <span class="input-group-text">.00</span>
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                      <span class="input-group-text">@</span>
+                      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                    </div>
+                    
+                    <div class="input-group">
+                      <span class="input-group-text">With textarea</span>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="section  order-md-1 flex-grow-1 p-2 d-flex justify-items-center flex-wrap flex-column"><!-- /.section -->
-                <h1>boolean</h1>
-                <p>3app</p>
+
+              <div class="section  order-md-1 flex-grow-1 pt-2 px-2 d-flex justify-items-center flex-wrap flex-column "><!-- /.section -->
+                
+                <div class="top">
+                  <h1 class="d-inline">boolean</h1>
+                  <span class="badge rounded-pill text-bg-dark mb-2">Dark</span>            
+                </div>
+                <div class="bottom">
+                  <span class="badge rounded-pill text-bg-dark">3app</span>
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span class="badge rounded-pill text-bg-dark d-xl-none">+</span>
+                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-xl-inline">Boolean mobile app</span>
+                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-xl-inline">Boolean web app</span> 
+                  <span class="badge rounded-pill text-bg-dark bg-opacity-50 d-none d-xl-inline">Boolean marameo</span>            
+                </div>
               </div>
-              <div class="section  order-md-2 flex-grow-1 p-2 d-flex justify-items-center flex-wrap flex-column"><!-- /.section -->
+
+              <div class="section  order-md-2 flex-grow-1 pt-2 px-2 py-md-3 d-flex justify-items-center flex-column"><!-- /.section -->
                 <h4>studenti online</h4>
                 <h2>125</h2>
               </div>   
@@ -166,7 +225,7 @@
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
+                                Come aggiungere un nuovo studente?
                               </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -178,7 +237,7 @@
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
+                                Come posso accedere alle informazioni del mio account?
                               </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -190,7 +249,7 @@
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                                Posso usare questa dashboard da mobile?
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
