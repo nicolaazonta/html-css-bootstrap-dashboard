@@ -71,6 +71,13 @@
 #main .cacao_canvas{
     width: 100%;
 }
+.cacao_class_name{
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 /* #region ---------MQ */
 @media screen and (min-width: 768px) {
